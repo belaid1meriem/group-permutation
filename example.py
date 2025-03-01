@@ -1,5 +1,5 @@
 from igraph import  plot
-from views import get_accepted_students, group_permutation, generate_graph, from_dict_to_students, create_group_list
+from group_permutation.views import get_accepted_students, group_permutation, generate_graph, from_dict_to_students, create_group_list
 
 
 group_list = ['G01', 'G02', 'G03', 'G04', 'G05', 'G06', 
