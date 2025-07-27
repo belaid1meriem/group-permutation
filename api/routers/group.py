@@ -1,13 +1,13 @@
 from typing import List
 from fastapi import APIRouter, Body
-from schemas.student import Student, Student_out
-from services.group_service import process_group_permutation
+from ..schemas.student import Student, StudentResponse
+from ..services.group_service import process_group_permutation
 
 router = APIRouter()
 
 @router.post(
     "/group_permutation",
-    response_model=List[Student_out],
+    response_model=List[StudentResponse],
     summary="Generate student group permutations",
     description="Takes a list of students and groups to process their movement.",
 )

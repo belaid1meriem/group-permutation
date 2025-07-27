@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from routers import group
+from .routers import group
 
 app = FastAPI()
 

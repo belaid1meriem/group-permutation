@@ -7,7 +7,7 @@ class Student(BaseModel):
     toG: str = Field(..., example="G02")
     date: datetime  = Field(..., example=datetime.now())
     
-class Student_out(BaseModel):
+class StudentResponse(BaseModel):
     matricule: str = Field(..., example="22/0008")
     fromG: str = Field(..., example="G01")
     toG: str = Field(..., example="G02")
