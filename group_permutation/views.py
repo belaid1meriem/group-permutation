@@ -35,7 +35,7 @@ def get_group_by_name(groups: list[Group], name: str) -> Group:
     for group in groups:
         if group.name == name:
             return group
-    raise ValueError("Group does not exist")
+    raise ValueError("Group " + name + " does not exist in group list.")
 
 
 def calculate_prio(students: list[dict]) -> list[dict]:
